@@ -10,10 +10,17 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Sen", sans-serif;
-  margin-top: 20px;
 }
 
 /* Common */
+
+.header {
+  background-color: #fffcf4;
+}
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
 .btn {
   display: flex;
   width: 144px;
@@ -39,6 +46,7 @@ a {
 .header .body {
   display: flex;
   align-items: center;
+  padding: 36px 0px 8px;
 }
 
 .nav {
@@ -58,6 +66,8 @@ a {
   text-shadow: 1px 0px 1px currentColor;
 }
 .nav li.active a::after {
+  color: #171100;
+  text-shadow: 1px 0px 1px currentColor;
   position: absolute;
   content: "";
   display: block;
@@ -67,4 +77,8 @@ a {
   bottom: 5px;
   border-radius: 1px;
   background-color: #171100;
+}
+
+.header .action {
+  padding-left: 45px;
 }
